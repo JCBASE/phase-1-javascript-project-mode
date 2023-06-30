@@ -11,6 +11,7 @@
 
 ### Languages Used:
 * JSON
+* HTML
 
 ### Sources:
 images downloaded from https://ibighit.com/txt/eng/discography/
