@@ -13,6 +13,7 @@
 * JSON
 * HTML
 * CSS
+* JavaScript
 
 ### Sources:
 images downloaded from https://ibighit.com/txt/eng/discography/
