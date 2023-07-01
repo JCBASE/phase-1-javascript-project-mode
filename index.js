@@ -15,7 +15,16 @@ const init = () => {
     })
 
     function album(albumData) {
-
+        let card = document.createElement('li');
+        card.className = 'card';
+        card.innerHTML = `
+        <h2>${userData.id}</h2>
+        <img
+            src="${albumData.image}"
+            alt="${albumData.id} "
+            />
+        `
+        albums.append(card);
     }
 
 }
