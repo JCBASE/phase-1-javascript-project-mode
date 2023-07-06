@@ -1,52 +1,52 @@
 {
-    "albums": [
-      {
-        "id": 1,
-        "title": "TDC: STAR",
-        "image": "https://ibighit.com/txt/images/txt/discography/the_dream_chapter-star/album-cover.jpg",
-        "tracks": 5
-      },
-      {
-        "id": 2,
-        "title": "TDC: MAGIC",
-        "image": "https://ibighit.com/txt/images/txt/discography/the_dream_chapter-magic/album-cover.jpg",
-        "tracks": 8
-      },
-      {
-        "id": 3,
-        "title": "TDC: ETERNITY",
-        "image": "https://ibighit.com/txt/images/txt/discography/the_dream_chapter-eternity/DEvkuGeZqimp54uCZ5FgbCYu.jpg",
-        "tracks": 6
-      },
-      {
-        "id": 4,
-        "title": "Minisode 1: Blue Hour",
-        "image": "https://ibighit.com/txt/images/txt/discography/blue_hour/19P3lLPNtKeM6x9RGOwO1swi.jpg",
-        "tracks": 5
-      },
-      {
-        "id": 5,
-        "title": "TCC: FREEZE",
-        "image": "https://ibighit.com/txt/images/txt/discography/the_chaos_chapter_freeze/RfMzwNE4j2MB8wrjKDMu923Z.jpg",
-        "tracks": 8
-      },
-      {
-        "id": 6,
-        "title": "TCC: FIGHT OR ESCAPE",
-        "image": "https://ibighit.com/txt/images/txt/discography/the_chaos_chapter-fight_escape/cover_fight_escape.jpg",
-        "tracks": 11
-      },
-      {
-        "id": 7,
-        "title": "Minisode 2: THURSDAY'S CHILD",
-        "image": "https://ibighit.com/txt/images/txt/discography/minisode-2/tmp-cover.png",
-        "tracks": 5
-      },
-      {
-        "id": 8,
-        "title": "TNC: TEMPTATION",
-        "image": "https://ibighit.com/txt/images/txt/discography/temptation/tmp-cover.png",
-        "tracks": 5
-      }
-    ]
-  }
+  "albums": [
+    {
+      "id": 1,
+      "title": "TDC: STAR",
+      "image": "https://ibighit.com/txt/images/txt/discography/the_dream_chapter-star/album-cover.jpg",
+      "tracks": 5
+    },
+    {
+      "id": 2,
+      "title": "TDC: MAGIC",
+      "image": "https://ibighit.com/txt/images/txt/discography/the_dream_chapter-magic/album-cover.jpg",
+      "tracks": 8
+    },
+    {
+      "id": 3,
+      "title": "TDC: ETERNITY",
+      "image": "https://ibighit.com/txt/images/txt/discography/the_dream_chapter-eternity/DEvkuGeZqimp54uCZ5FgbCYu.jpg",
+      "tracks": 6
+    },
+    {
+      "id": 4,
+      "title": "Minisode 1: Blue Hour",
+      "image": "https://ibighit.com/txt/images/txt/discography/blue_hour/19P3lLPNtKeM6x9RGOwO1swi.jpg",
+      "tracks": 5
+    },
+    {
+      "id": 5,
+      "title": "TCC: FREEZE",
+      "image": "https://ibighit.com/txt/images/txt/discography/the_chaos_chapter_freeze/RfMzwNE4j2MB8wrjKDMu923Z.jpg",
+      "tracks": 8
+    },
+    {
+      "id": 6,
+      "title": "TCC: FIGHT OR ESCAPE",
+      "image": "https://ibighit.com/txt/images/txt/discography/the_chaos_chapter-fight_escape/cover_fight_escape.jpg",
+      "tracks": 11
+    },
+    {
+      "id": 7,
+      "title": "Minisode 2: THURSDAY'S CHILD",
+      "image": "https://ibighit.com/txt/images/txt/discography/minisode-2/tmp-cover.png",
+      "tracks": 5
+    },
+    {
+      "id": 8,
+      "title": "TNC: TEMPTATION",
+      "image": "https://ibighit.com/txt/images/txt/discography/temptation/tmp-cover.png",
+      "tracks": 5
+    }
+  ]
+}

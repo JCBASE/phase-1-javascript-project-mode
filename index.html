@@ -9,22 +9,31 @@
         <script src="index.js"></script>
     </head>
     <body>
+        <ul>
+            <li>TDC: STAR => ID: 1</li>
+            <li>TDC: MAGIC => ID: 2</li>
+            <li>TDC: ETERNITY => ID: 3</li>
+        </ul>
         <div id ='main'>
 
             <h2>Album Search</h2>
 
-            <form id="album-form">
-                <input id="search" type="text" name="search">
+            <section>
+            <form>
+                <label for ="search">Search By ID</label>
+                <input id="search" type="text" placeholder="Enter ID here" />
                 <input type="submit" name="submit" />
             </form>
-            <div id="album-container">
-                <ul id="albums">
+            </section>
 
+            <section id="album-container">
+                <ul id="albums">
+                    <h4>Albums</h4>
                 </ul>
                 <ul id="songs">
                     
                 </ul>
-            </div>
+            </section>
         </div>
     </body>
 </html>

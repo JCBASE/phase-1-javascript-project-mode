@@ -1,31 +1,43 @@
-const init = () => {
-    const form = document.querySelector("#album-form");
-    const albums = document.querySelector("#albums");
-    const songs = document.querySelector("#songs");
-
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        albums.innerHTML = "";
-        songs.innerHTML = "";
-
-        fetch(`http://localhost:3000/albums/${event.target.search.value}`)
-        .then(response => response.json())
-        .then(data => data.albums.forEach(album))
-
-    })
-
-    function album(albumData) {
+    const inputForm = document.querySelector("form");
+    const albumsList = document.querySelector("#albums");
+    const songsList = document.querySelector("#songs");
+    function renderAlbum(albumData) {
         let card = document.createElement('li');
         card.className = 'card';
         card.innerHTML = `
-        <h2>${userData.id}</h2>
+        <h3>${albumData.title}</h3>
         <img
             src="${albumData.image}"
             alt="${albumData.id} "
             />
         `
-        albums.append(card);
+        document.querySelector("#albums").appendChild(card);
     }
+        function getAlbums() {
+        fetch(`http://localhost:3000/albums`)
+        .then((response) => response.json())
+        .then((data) => data.forEach(data => renderAlbum(data)));
+        }
 
-}
+
+   function initialize(){
+    getAlbums();
+   }
+   initialize();
+
+ 
+const init = () => {
+    const inputForm = document.querySelector("form");
+    const albumsList = document.querySelector("#albums");
+    const songsList = document.querySelector("#songs");
+    inputForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const input = document.querySelector("input#search");
+        albumsList.innerHTML = "";
+        songsList.innerHTML = "";
+        fetch(`http://localhost:3000/albums/${input.value}`)
+        .then((response) => response.json())
+        .then((data) => renderAlbum(data));
+        });
+    };
 document.addEventListener("DOMContentLoaded", init);
