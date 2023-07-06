@@ -10,9 +10,28 @@
             src="${albumData.image}"
             alt="${albumData.id} "
             />
+        <div class="content">
+            <button> Songs </button>
+            </div>
         `
+        card.querySelector("button").addEventListener('click', (e) => handleClick(albumData));
+
         document.querySelector("#albums").appendChild(card);
     }
+
+    function handleClick(albumData){
+        fetch(`http://localhost:3000/albums/${albumData.id}`)
+        .then(response => response.json())
+        .then(data => renderTracks(data))   
+    }
+
+    function renderTracks(track) {
+        const li = document.createElement('li');
+        li.innerHTML = track.tracks;
+        document.querySelector("#songs").append(li);
+    }
+
+
         function getAlbums() {
         fetch(`http://localhost:3000/albums`)
         .then((response) => response.json())
@@ -39,5 +58,8 @@ const init = () => {
         .then((response) => response.json())
         .then((data) => renderAlbum(data));
         });
+
+
+        
     };
 document.addEventListener("DOMContentLoaded", init);
