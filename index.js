@@ -2,6 +2,7 @@
     const albumsList = document.querySelector("#albums");
     const songsList = document.querySelector("#songs");
     function renderAlbum(albumData) {
+        let albumList = document.getElementById("albums")
         let card = document.createElement('li');
         card.className = 'card';
         card.innerHTML = `
@@ -16,7 +17,7 @@
         `
         card.querySelector("button").addEventListener('click', (e) => handleClick(albumData));
 
-        document.querySelector("#albums").appendChild(card);
+        albumList.appendChild(card);
     }
 
     function handleClick(albumData){
@@ -25,10 +26,16 @@
         .then(data => renderTracks(data))   
     }
 
-    function renderTracks(track) {
-        const li = document.createElement('li');
-        li.innerHTML = track.tracks;
-        document.querySelector("#songs").append(li);
+    function renderTracks(album) {
+        let songList = document.getElementById("songs");
+        for(i = 0; i < album.tracks.length; ++i) {
+            let li = document.createElement("li");
+            li.className = 'li'
+            li.innerHTML = `<h4> </h4>
+            ${album.tracks[i]}
+            `;
+            songList.append(li);
+        }
     }
 
 
