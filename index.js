@@ -38,6 +38,10 @@
         }
     }
 
+    function darkMode() {
+        document.body.classList.toggle("dark-mode"); 
+    }
+
 
         function getAlbums() {
         fetch(`http://localhost:3000/albums`)

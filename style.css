@@ -3,6 +3,11 @@ body {
     color: black;
 }
 
+.dark-mode {
+    background-color: darkblue;
+    color: lightyellow;
+}
+
 #main {
     display: flex;
     flex-direction: column;
