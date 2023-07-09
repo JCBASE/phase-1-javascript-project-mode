@@ -15,7 +15,7 @@
             <button> Songs </button>
             </div>
         `
-        card.querySelector("button").addEventListener('click', (e) => handleClick(albumData));
+        card.querySelector("button").addEventListener('click', (e) => handleClick(albumData), {once: true});
 
         albumList.appendChild(card);
     }
