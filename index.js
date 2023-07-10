@@ -1,6 +1,8 @@
     const inputForm = document.querySelector("form");
     const albumsList = document.querySelector("#albums");
     const songsList = document.querySelector("#songs");
+    const EMPTY_HEART = '♡'
+    const FULL_HEART = '♥'
     function renderAlbum(albumData) {
         let albumList = document.getElementById("albums")
         let card = document.createElement('li');

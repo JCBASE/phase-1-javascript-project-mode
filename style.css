@@ -27,3 +27,11 @@ img {
     height: 200px;
     vertical-align: middle;
 }
+
+.activated-heart {
+    color: red;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
