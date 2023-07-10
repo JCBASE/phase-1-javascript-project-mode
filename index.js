@@ -34,8 +34,9 @@
             let li = document.createElement("li");
             li.className = 'li'
             li.innerHTML = `<h4> </h4>
-            ${album.tracks[i]}
+            ${album.tracks[i]} <span class="like-glyph">&#x2661;</span>
             `;
+            li.querySelector('.like-glyph').addEventListener('click', (e) => likeCallback(e));
             songList.append(li);
         }
     }
