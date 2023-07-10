@@ -41,6 +41,17 @@
         }
     }
 
+    function likeCallback(e) {
+        const heart = e.target;
+        if (heart.textContent === EMPTY_HEART) {
+            heart.textContent = FULL_HEART;
+            heart.classList.add('activated-heart')
+        } else if (heart.textContent === FULL_HEART) {
+            heart.textContent = EMPTY_HEART;
+            heart.classList.remove('activated-heart');
+          }
+    }
+
     function darkMode() {
         document.body.classList.toggle("dark-mode"); 
     }
