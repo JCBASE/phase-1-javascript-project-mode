@@ -12,6 +12,7 @@ This application was meant to present a list of albums. Using TOMORROW X TOGETHE
 
 ## API Data:
 db.json file using json-sever that returns an array of 8 album objects with each object having 4 attributes.
+
 **Attributes**: 
 - ID 
 - title 
@@ -72,9 +73,7 @@ db.json file using json-sever that returns an array of 8 album objects with each
   ]
 }
 ```
-
-
-
+Initially, the data will be fetched and for each data the keys will render in cards comprised of a title, an image, and a Songs button. The "id" data will be fetched in a form based on what the user types and the "title" and "image" data will be rendered and displayed for that id. Once the user clicks the Songs button, the "id" data will be fetched again and the "tracks" data will be rendered by its respective id.
 
 ## Challanges you expect to face
 
