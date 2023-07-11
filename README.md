@@ -1,10 +1,10 @@
 # Search Albums and Like Songs
 
 ## Basic story of application:
-This application was meant to present a list of albums. Using TOMORROW X TOGETHER's discography page (July 2023) as reference, I was able to create a display of +x+ album covers and list each of the albums respective songs with a press of a button. With the knowledge that I've learned throughout phase-1, you can be able to search a specific album and like your favorite songs.
+This application was meant to present a list of albums. Using TOMORROW X TOGETHER's discography page (July 2023) as reference, I was able to create a display of +x+ album covers and list each of the albums respective songs with a press of a button. With the knowledge that I've learned throughout phase-1, you can be able to search a specific +x+ album and like your favorite songs.
 
 ## Core Features of MVP:
-* A search bar that searches albums by ID.
+* A search bar that searches albums by ID number.
 * Lists titles of the ablums and images of the album covers.
 * Button provides song titles.
 * Clickable hearts next to each song title.
@@ -14,7 +14,7 @@ This application was meant to present a list of albums. Using TOMORROW X TOGETHE
 db.json file using json-sever that returns an array of 8 album objects with each object having 4 attributes.
 
 **Attributes**: 
-- ID 
+- id 
 - title 
 - image
 - tracks
@@ -75,7 +75,9 @@ db.json file using json-sever that returns an array of 8 album objects with each
 ```
 Initially, the data will be fetched and for each data the keys will render in cards comprised of a title, an image, and a Songs button. The "id" data will be fetched in a form based on what the user types and the "title" and "image" data will be rendered and displayed for that id. Once the user clicks the Songs button, the "id" data will be fetched again and the "tracks" data will be rendered by its respective id.
 
-## Challanges you expect to face
+## Challanges you expect to face:
+Expect this project to not work exactly like the GitHub Search App since the `db.json` file only works with an array of objects while GSA worked with a key of `items` pointing to an array of items objects. So there was no `albums` key for me to route, because of this I couldn't fetch a specific id under albums.
+Expect the fetch to not recieve the input value and not fetch data, in this case it was a `data.forEach is not a function` error. To resolve that I had to initialize the form data and the rendering seperately so that one fetch will recieve "id" data for the form, and another fetch will recieve data where `forEach` is properly used for rendering the titles and images.
 
 ## How you are meeting the requirements of the project
 

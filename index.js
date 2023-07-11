@@ -83,8 +83,6 @@ const init = () => {
         .then((response) => response.json())
         .then((data) => renderAlbum(data));
         });
-
-
         
     };
 document.addEventListener("DOMContentLoaded", init);
