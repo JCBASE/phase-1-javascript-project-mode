@@ -80,7 +80,7 @@ Expect this project to not work exactly like the GitHub Search App since the `db
 Expect the fetch to not recieve the input value and not fetch data, in this case it was a `data.forEach is not a function` error. To resolve that I had to initialize the form data and the rendering seperately so that one fetch will recieve "id" data for the form, and another fetch will recieve data where `forEach` is properly used for rendering the titles and images.
 
 ## How you are meeting the requirements of the project
-
+App has a HTML/CSS/JS frontend that accesses data from a db.json file using a json.server. The db.json returns a collection of 8 objects with each having 4 attributes. All interactions between the client and the API are handled asynchronously and uses JSON as the communication format. Uses 3 event listeners: submit, DOMContentLoaded, and click. Project implements at least one forEach for array iteration.
 
 ### Languages Used:
 * JSON
