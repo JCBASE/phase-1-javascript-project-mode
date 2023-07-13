@@ -3,7 +3,7 @@
 ## Basic story of application:
 This application was meant to present a list of albums. Using TOMORROW X TOGETHER's discography page (July 2023) as reference, I was able to create a display of +x+ album covers and list each of the albums respective songs with a press of a button. With the knowledge that I've learned throughout phase-1, you can be able to search a specific +x+ album and like your favorite songs.
 
-<img src="image.png" alt="drawing" width="200"/>
+<img src="image.png" alt="drawing" width="300"/>
 
 ## Core Features of MVP:
 * A search bar that searches albums by ID number.
@@ -83,6 +83,12 @@ Expect the fetch to not recieve the input value and not fetch data, in this case
 
 ## How you are meeting the requirements of the project
 App has a HTML/CSS/JS frontend that accesses data from a db.json file using a json.server. The db.json returns a collection of 8 objects with each having 4 attributes. All interactions between the client and the API are handled asynchronously and uses JSON as the communication format. Uses 3 event listeners: submit, DOMContentLoaded, and click. Project implements at least one forEach for array iteration.
+
+### References:
+* GitHub Search App (Rendering data)
+* Fetch on Demand with Forms (Fetching with form)
+* Building the Simple Liker App ("liking" functionality)
+* Challenge: TaskLister Mini-Project (Javascript events)
 
 ### Languages Used:
 * JSON
