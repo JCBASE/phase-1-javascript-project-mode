@@ -1,10 +1,9 @@
-    const inputForm = document.querySelector("form");
     const albumsList = document.querySelector("#albums");
     const songsList = document.querySelector("#songs");
     const EMPTY_HEART = '♡'
     const FULL_HEART = '♥'
     function renderAlbum(albumData) {
-        let albumList = document.getElementById("albums")
+        let albumList = document.getElementById("albums");
         let card = document.createElement('li');
         card.className = 'card';
         card.innerHTML = `
@@ -25,7 +24,7 @@
     function handleClick(albumData){
         fetch(`http://localhost:3000/albums/${albumData.id}`)
         .then(response => response.json())
-        .then(data => renderTracks(data))   
+        .then(data => renderTracks(data))  
     }
 
     function renderTracks(album) {
@@ -39,6 +38,7 @@
             li.querySelector('.like-glyph').addEventListener('click', (e) => likeCallback(e));
             songList.append(li);
         }
+        
     }
 
     function likeCallback(e) {
@@ -57,11 +57,11 @@
     }
 
 
-        function getAlbums() {
+    function getAlbums() {
         fetch(`http://localhost:3000/albums`)
         .then((response) => response.json())
         .then((data) => data.forEach(data => renderAlbum(data)));
-        }
+    }
 
 
    function initialize(){
