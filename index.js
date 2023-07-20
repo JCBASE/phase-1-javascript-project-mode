@@ -38,7 +38,14 @@
             li.querySelector('.like-glyph').addEventListener('click', (e) => likeCallback(e));
             songList.append(li);
         }
-        
+        let recList = document.getElementById("recommend-songs");
+        let random = Math.floor(Math.random() * album.tracks.length);
+        let rl = document.createElement('li');
+        rl.className = 'rl';
+        rl.innerHTML = ` 
+        ${album.tracks[random]}
+        `
+        recList.appendChild(rl);
     }
 
     function likeCallback(e) {
