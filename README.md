@@ -87,7 +87,9 @@ Expect the fetch to not recieve the input value and not fetch data, in this case
 
 Initially, there was supposed to be another list that has your liked songs. The problem was that using the click event only affected the liked heart glyph and not the song element. The code just isn't D.R.Y., it feels like each function just keeps rendering off of each other. That's why the recommended list is there to suffice without needing to do an extra fetch of data. 
 
-## How you are meeting the requirements of the project
+Didn't make the dark mode button an event listener. It probably would have worked if it was in the rendering funcions but I had no reason to have a dark mode button in any of those functions.
+
+## How you are meeting the requirements of the project:
 App has a HTML/CSS/JS frontend that accesses data from a db.json file using a json.server. The db.json returns a collection of 8 objects with each having 4 attributes. All interactions between the client and the API are handled asynchronously and uses JSON as the communication format. Uses 3 event listeners: submit, DOMContentLoaded, and click. Project implements at least one forEach for array iteration.
 
 ### References:
