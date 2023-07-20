@@ -7,6 +7,8 @@ This application was meant to present a list of albums. Using TOMORROW X TOGETHE
 
 You can even generate random songs from each album when you click the songs button. For every time you search an album you can add a random song from that album to the recommended list using the songs button.
 
+<img src="image-1.png" alt="Recommend List" width="300"/>
+
 ## Core Features of MVP:
 * A search bar that searches albums by ID number.
 * Lists titles of the ablums and images of the album covers.
