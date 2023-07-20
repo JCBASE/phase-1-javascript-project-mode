@@ -3,7 +3,9 @@
 ## Basic story of application:
 This application was meant to present a list of albums. Using TOMORROW X TOGETHER's discography page (July 2023) as reference, I was able to create a display of +x+ album covers and list each of the albums respective songs with a press of a button. With the knowledge that I've learned throughout phase-1, you can be able to search a specific +x+ album and like your favorite songs.
 
-<img src="image.png" alt="drawing" width="300"/>
+<img src="image.png" alt="Album Search" width="300"/>
+
+You can even generate random songs from each album when you click the songs button. For every time you search an album you can add a random song from that album to the recommended list using the songs button.
 
 ## Core Features of MVP:
 * A search bar that searches albums by ID number.
