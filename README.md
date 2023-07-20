@@ -85,6 +85,8 @@ Initially, the data will be fetched and for each data the keys will render in ca
 Expect this project to not work exactly like the GitHub Search App since the `db.json` file only works with an array of objects while GSA worked with a key of `items` pointing to an array of items objects. So there was no `albums` key for me to route, because of this I couldn't fetch a specific id under albums.
 Expect the fetch to not recieve the input value and not fetch data, in this case it was a `data.forEach is not a function` error. To resolve that I had to initialize the form data and the rendering seperately so that one fetch will recieve "id" data for the form, and another fetch will recieve data where `forEach` is properly used for rendering the titles and images.
 
+Initially, there was supposed to be another list that has your liked songs. The problem was that using the click event only affected the liked heart glyph and not the song element. The code just isn't D.R.Y., it feels like each function just keeps rendering off of each other. That's why the recommended list is there to suffice without needing to do an extra fetch of data. 
+
 ## How you are meeting the requirements of the project
 App has a HTML/CSS/JS frontend that accesses data from a db.json file using a json.server. The db.json returns a collection of 8 objects with each having 4 attributes. All interactions between the client and the API are handled asynchronously and uses JSON as the communication format. Uses 3 event listeners: submit, DOMContentLoaded, and click. Project implements at least one forEach for array iteration.
 
