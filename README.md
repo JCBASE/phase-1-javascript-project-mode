@@ -1,7 +1,7 @@
 # Search Albums and Like Songs
 
 ## Basic story of application:
-This application was meant to present a list of albums. Using TOMORROW X TOGETHER's discography page (July 2023) as reference, I was able to create a display of +x+ album covers and list each of the albums respective songs with a press of a button. With the knowledge that I've learned throughout phase-1, you can be able to search a specific +x+ album and like your favorite songs.
+This application was meant to present a list of albums. Using TOMORROW X TOGETHER's discography page (July 2023) as reference, I was able to create a display of +x+ album covers and list each of the albums respective songs with a press of a button. With the knowledge that I've learned throughout phase-1, you will be able to search for a specific +x+ album and like your favorite songs.
 
 <img src="image.png" alt="Album Search" width="300"/>
 
@@ -79,18 +79,18 @@ db.json file using json-sever that returns an array of 8 album objects with each
   ]
 }
 ```
-Initially, the data will be fetched and for each data the keys will render in cards comprised of a title, an image, and a Songs button. The "id" data will be fetched in a form based on what the user types and the "title" and "image" data will be rendered and displayed for that id. Once the user clicks the Songs button, the "id" data will be fetched again and the "tracks" data will be rendered by its respective id.
+Initially, the data will be fetched and for each data the keys will render in cards composed of a title, an image, and a Songs button. The "id" data will be fetched in a form based on what the user types and the "title" and "image" data will be rendered and displayed for that id. Once the user clicks the Songs button, the "id" data will be fetched again and the "tracks" data will be rendered by its respective id.
 
 ## Challanges you expect to face:
 Expect this project to not work exactly like the GitHub Search App since the `db.json` file only works with an array of objects while GSA worked with a key of `items` pointing to an array of items objects. So there was no `albums` key for me to route, because of this I couldn't fetch a specific id under albums.
-Expect the fetch to not recieve the input value and not fetch data, in this case it was a `data.forEach is not a function` error. To resolve that I had to initialize the form data and the rendering seperately so that one fetch will recieve "id" data for the form, and another fetch will recieve data where `forEach` is properly used for rendering the titles and images.
+Expect the fetch to not receive the input value and not fetch data, in this case it was a `data.forEach is not a function` error. To resolve that I had to initialize the form data and the rendering separately so that one fetch will receive "id" data for the form, and another fetch will receive data where `forEach` is properly used for rendering the titles and images.
 
-At first, there was supposed to be another list that has your liked songs. The problem was that using the click event only affected the liked heart glyph and not the song element. The code just isn't D.R.Y., it feels like each function just keeps rendering off of each other. That's why the recommended list is there to suffice without needing to do an extra fetch of data. 
+At first, there was supposed to be another list that appends your liked songs. The problem was that using the click event only affected the liked heart glyph and not the song element. The code just isn't D.R.Y., it feels like each function just keeps rendering off of each other. That's why the recommended list is there to suffice without needing to do an extra fetch of data. 
 
-Didn't make the dark mode button an event listener. It probably would have worked if it was in the rendering functions but I had no reason to have a dark mode button in any of those functions. Maybe I had to initialize another seperate function just like how I initialized the form.
+Didn't make the dark mode button an event listener. It probably would have worked if it was in the rendering functions but I had no reason to have a dark mode button in any of those functions. Maybe I had to initialize another separate function just like how I initialized the form.
 
 ## How you are meeting the requirements of the project:
-App has a HTML/CSS/JS frontend that accesses data from a db.json file using a json.server. The db.json returns a collection of 8 objects with each having 4 attributes. All interactions between the client and the API are handled asynchronously and uses JSON as the communication format. Uses 3 event listeners: submit, DOMContentLoaded, and click. Project implements at least one forEach for array iteration.
+App has a HTML/CSS/JS frontend that accesses data from a db.json file using a json.server. The db.json returns a collection of 8 objects with each having 4 attributes. All interactions between the client and the API are handled asynchronously and use JSON as the communication format. Uses 3 event listeners: submit, DOMContentLoaded, and click. Project implements at least one forEach for array iteration.
 
 ### References:
 * GitHub Search App (Rendering data)
