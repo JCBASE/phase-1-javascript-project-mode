@@ -29,15 +29,15 @@
 
     function renderTracks(album) {
         let songList = document.getElementById("songs");
-        for(i = 0; i < album.tracks.length; ++i) {
+        album.tracks.forEach(track => {
             let li = document.createElement("li");
             li.className = 'li'
             li.innerHTML = `<h4> </h4>
-            ${album.tracks[i]} <span class="like-glyph">&#x2661;</span>
+            ${track} <span class="like-glyph">&#x2661;</span>
             `;
-            li.querySelector('.like-glyph').addEventListener('click', (e) => likeCallback(e));
+            li.querySelector('.like-glyph').addEventListener('click', likeCallback);
             songList.append(li);
-        }
+        })
         let recList = document.getElementById("recommend-songs");
         let random = Math.floor(Math.random() * album.tracks.length);
         let rl = document.createElement('li');
@@ -63,21 +63,16 @@
         document.body.classList.toggle("dark-mode"); 
     }
 
-
     function getAlbums() {
         fetch(`http://localhost:3000/albums`)
         .then((response) => response.json())
-        .then((data) => data.forEach(data => renderAlbum(data)));
+        .then((data) => {
+            data.forEach(album => renderAlbum(album))
+        });
     }
-
-
-   function initialize(){
-    getAlbums();
-   }
-   initialize();
-
  
 const init = () => {
+    getAlbums();
     const inputForm = document.querySelector("form");
     const albumsList = document.querySelector("#albums");
     const songsList = document.querySelector("#songs");
